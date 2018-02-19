@@ -1,0 +1,7 @@
+<mat-toolbar color="primary">
+    <span class="center">albuquerque rss feed</span>
+    <span class="pointer-cursor"><mat-icon (click)="refreshFeed()">refresh</mat-icon></span>
+</mat-toolbar>
+
+<app-feed-card *ngFor="let feed of feeds" [feed]="feed"></app-feed-card>
+<app-spinner *ngIf="!feeds.length"></app-spinner>

@@ -1,0 +1,5 @@
+<mat-card class="card-feed-entry" (click)="openLinkInBrowser()">
+    <mat-card-title>{{feed.title}}</mat-card-title>
+    <mat-card-content>{{feed.description | stripHtmlTags}}</mat-card-content>
+    <mat-card-subtitle>{{feed.pubDate | date:'MMM dd, yyyy'}}</mat-card-subtitle>
+</mat-card>
