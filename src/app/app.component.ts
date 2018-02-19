@@ -10,7 +10,7 @@ import './rxjs-operators';
 })
 export class AppComponent implements OnInit {
 
-    private feedUrl = 'http://www.cabq.gov/community/events/RSS';
+    private feedUrl = 'http://www.cabq.gov/news/news/RSS';
     feeds: Array<FeedEntry> = [];
 
     constructor(private feedService: FeedService) {
